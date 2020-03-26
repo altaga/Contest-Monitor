@@ -29,7 +29,7 @@ https://www.anaconda.com/distribution/
 # Connection Diagram:
 
 ## Laptop:
-<img src="https://i.ibb.co/y4FrTkR/image.png" width="1000">
+<img src="https://i.ibb.co/5k01tdy/cheme.png" width="1000">
 
 # Laptop Setup:
 
