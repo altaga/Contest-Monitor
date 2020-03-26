@@ -46,7 +46,7 @@ try:
                     dif=dif + difference[i][j][2]
             print(dif)
             if(dif!=0):
-                print("Han publicado los resultados!")
+                print("Results have been published!")
                 webbrowser.open(url, new=2)
                 raise KeyboardInterrupt
             timer=time.time()
