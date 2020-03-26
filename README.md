@@ -13,9 +13,9 @@ Online contest results monitor.
 
 # Introduction:
 
-Si eres un usuario activo en comunidades que realizan increíbles concursos como lo son plataformas como hackster, habrás tenido el problema de estar esperando a que los organizadores suban los resultados de un concurso y habrás estado como loco, presionando el refresh de la pagina web con la esperanza de ver como aparece tu proyecto en alguno de los premios.
+If you are an active user in communities that carry out incredible contests such as platforms like hackster, you will have had the problem of waiting for the organizers to upload the results of a contest and you will have been like crazy, pressing the refresh of the website with the Hope to see how your project appears in one of the awards.
 
-Si ese es tu caso, entonces tenemos la solución a tu problema!
+If that is your case, then we have the solution to your problem!
 
 # Materials:
 
@@ -33,35 +33,35 @@ https://www.anaconda.com/distribution/
 
 # Laptop Setup:
 
-En mi caso programe un algoritmo que revisa si una pagina web ha sufrido algún cambio, en el caso particular de hackster, las paginas de los concursos, una vez publican los anuncios pasan de verse asi:
+In my case, program an algorithm that checks if a web page has undergone any change, in the particular case of hackster, the pages of the contests, once the ads are published, look like this:
 
 <img src="https://i.ibb.co/y4FrTkR/image.png" width="1000">
 
-A verse asi:
+To look like this:
 
 <img src="https://i.ibb.co/wdx3B24/image.png" width="1000">
 
-Por lo tanto la primera etapa para que funcione el sistema es instalar algun software que permita correr python de forma correcta en tu OS, en el caso de windows usare Anaconda.
+Therefore the first stage for the system to work is to install some software that allows python to run correctly on your OS, in the case of windows I will use Anaconda.
 
 ## Install Firefox:
 
-Si tu navegador principal no es firefox, descargalo, es necesario para el funcionamiento correcto del script, no es necesario que lo conviertas en tu navegador principal.
+If your main browser is not firefox, download it, it is necessary for the script to work properly, you do not need to make it your main browser.
 
 https://www.mozilla.org/en-US/firefox/new/
 
 ## Install Geckodriver:
 
-Windows:
+### Windows:
 
-Añade la carpeta llamada "Monitor" del repositorio de Github a las Environment Variables:
+Add the folder called "Monitor" from the Github repository to the Environment Variables:
 
 <img src="https://i.ibb.co/hstkt8X/image.png" width="1000">
 
-MacOS:
+### MacOS:
 
 https://www.kenst.com/2016/12/installing-marionette-firefoxdriver-on-mac-osx/
 
-Linux:
+### Linux:
 
 Here are the steps:
 
@@ -85,37 +85,32 @@ There are many ways to do this that will work. The above works for me on Ubuntu 
 
 ## Install Anaconda:
 
-La documentación de anaconda ya tiene esta guiá para hacer la instalación:
+Anaconda documentation already has this guide to do the installation:
 
 https://docs.anaconda.com/anaconda/install/
 
 ## Create the OpenCv Environment:
 
-En tu consola de comandos escribe el siguiente comando para crear un environment especializado para este proyecto:
+In your command console type the following command to create a specialized environment for this project:
 
     conda create --name myenv
 
 <img src="https://i.ibb.co/n6HMQm9/image.png" width="1000">
 
-Una vez se termine de crear el environment, escribe los siguientes comandos para activar el environment e instalar las librerías necesarias, un comando por linea:
+Once the environment is finished, write the following commands to activate the environment and install the necessary libraries, one command per line:
 
     activate myenv
     pip install selenium opencv-python webbrowser
 
-Si todo lo realizas correctamente, ya podras ejecutar el script, el script se ejecuta con el siguiente comando.
+If everything is done correctly, you can already run the script, the script is executed with the following command.
 
     python check.py "YOUR_URL_CONTEST"
 
-Real Example para el dia April 17, 2020:
+Real Example for April 17, 2020:
 
     python check.py "https://www.hackster.io/contests/OnSemi"
 
-EPIC DEMO:
+# EPIC DEMO:
 
 Video: Click on the image
 [![Demo](https://i.ibb.co/nLM2fqW/Untitled-1.png)](https://youtu.be/d2KIuQ6N6Nk)
-
-
-
-
-
